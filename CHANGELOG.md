@@ -1,5 +1,13 @@
 # Changelog
 
+### v0.3.1
+
+Added autocompletes to the forms.
+
+Headings and their styles updates.
+
+Input field issue fix.
+
 ### v0.3.0
 
 Added requirements files: challenge and challenge-extra.
