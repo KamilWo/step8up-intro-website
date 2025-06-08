@@ -1,0 +1,15 @@
+{
+  "name": "step8up-intro-website",
+  "version": "0.1.0",
+  "description": "This is my first web development project, created as part of the Step8Up bootcamp!",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "simple website",
+    "HTML form"
+  ],
+  "author": "Kamil Wozniak",
+  "license": "GPLv3"
+}
