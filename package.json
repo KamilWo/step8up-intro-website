@@ -1,13 +1,13 @@
 {
   "name": "step8up-intro-website",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "This is my first web development project, created as part of the Step8Up bootcamp!",
   "private": "true",
   "scripts": {
     "prebuild": "npm run validate && rimraf ./public",
     "build": "parcel build src/index.html --dist-dir ./public --public-url /step8up-intro-website/",
     "start": "rimraf ./dist && parcel src/index.html",
-    "validate": "npx stylelint src/assets/**/*.css && npx html-validate src/**/*.html"
+    "validate": "npx stylelint src/assets/**/*.css; npx html-validate src/**/*.html"
   },
   "keywords": [
     "Simple website",

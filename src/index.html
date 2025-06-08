@@ -1,32 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamil Wozniak - Intro website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamil Wozniak - My website</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_32x32.png">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+<button type="button" class="btn" id="scroll-top-btn" title="Go to top">^ Top</button>
 <header>
+  <div class="container">
+    <h1><img class="site-logo" src="./assets/images/step8up-academy-logo.jpg" alt="Step8up Academy Logo" title="Logo"> Kamil Wozniak</h1>
     <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+      <ul class="nav-list">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        &#9776; </div>
     </nav>
+  </div>
 </header>
 
 <main>
-    <h1>Kamil Wozniak</h1>
-    <p>Hi! I am a Software Engineer, passionate about programming.</p>
-    <img src="assets/images/profile_picture.jpeg" alt="Kamil Wozniak profile picture" title="Profile Picture">
+  <section id="intro">
+    <h2>Welcome to My Corner of the Web</h2>
+    <p>Hello there! I'm <strong>Kamil Wozniak</strong>, a <strong>Software Engineer</strong> with a deep passion for programming.</p>
+    <p>I've crafted this space to share my journey, projects, and insights with you. Feel free to explore:</p>
+    <ul>
+      <li><a href="#about">About</a>: Learn more about my background, skills, and what drives me.</li>
+      <li><a href="#projects">Projects</a>: Discover a selection of my work and projects.</li>
+      <li><a href="#contact">Contact</a>: Get in touch if you have any questions or just want to connect.</li>
+    </ul>
+    <p>I hope you enjoy your visit!</p>
+  </section>
+
+  <section id="about">
+    <h1>About me</h1>
+    <img class="rounded" src="./assets/images/profile_picture.jpg" alt="Kamil Wozniak profile picture" title="Profile Picture">
+    <article>For the past 10 years, I've immersed myself in the dynamic world of web development,
+      focusing intensely on crafting compelling digital experiences using the foundational
+      trio of HTML, CSS, and JavaScript. My journey began with mastering HTML to structure
+      content semantically, ensuring accessibility and robust foundations for every project.
+      This was quickly followed by diving deep into CSS, where I honed my skills in bringing
+      designs to life, from responsive layouts that adapt seamlessly across devices
+      to intricate animations and user-friendly interfaces that prioritize aesthetics
+      and usability.
+    <br>
+      My expertise extends to leveraging JavaScript to inject interactivity and dynamic
+      functionality into static pages. Over these years, I've built a solid understanding
+      of vanilla JavaScript, enabling me to develop engaging features, handle user
+      interactions, and integrate with various APIs to create rich, data-driven applications.
+      Each project has been an opportunity to refine my problem-solving abilities and
+      to embrace best practices in front-end development, ensuring clean, efficient,
+      and maintainable code that delivers exceptional user experiences.
+    </article>
+  </section>
+
+  <section id="projects">
+    <h1>My Projects - Fictional</h1>
+
+    <p>Welcome to my portfolio! Here you'll find a selection of my recent work.</p>
+
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <h2>Project Alpha</h2>
+        <img src="./assets/images/portfolio1.avif" alt="Portfolio screenshot 1" title="Project Alpha">
+        <p>In this Project Alpha, I've built a website for a local company using HTML, CSS and JavaScript.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="portfolio-item">
+        <h2>Project Beta</h2>
+        <img src="./assets/images/portfolio2.jpg" alt="Portfolio screenshot 2" title="Project Beta">
+        <p>In the Project Beta, I've created a website for creative designer, using HTML, CSS and JavaScript.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="portfolio-item">
+        <h2>Project Gamma</h2>
+        <img src="./assets/images/portfolio3.jpg" alt="Portfolio screenshot 2" title="Project Beta">
+        <p>In the Project Gamma, I've created a website for software engineer, using HTML, CSS and JavaScript.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>Get in Touch</h1>
+    <p class="intro-text">
+      Have a project in mind, a question, or just want to say hello? I'd love to hear from you!
+      Please fill out the form below, and I'll get back to you as soon as possible.
+    </p>
+    <form action="/fake-submit.php" method="post" class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" required placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required placeholder="john.doe@example.com">
+      </div>
+      <div class="form-group">
+        <label for="tel">Telephone (optional):</label>
+        <input type="tel" name="tel" id="tel" placeholder="+44 1234 567890">
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea name="message" id="message" rows="7" required placeholder="Tell me about your project or inquiry..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Other Ways to Connect</h2>
+      <p>Feel free to reach out directly via email or connect with me on social media.</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:kamil.wozniak@example.com">kamil.wozniak@example.com</a></li>
+        <li><strong>Phone Number:</strong> <a href="tel:+441234567890">+44 1234 567890</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kamil-wozniak-b7429a113/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/kamil-wozniak-b7429a113/</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/KamilWo" target="_blank" rel="noopener noreferrer">https://github.com/KamilWo</a></li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <footer>
-    <p>Kamil Wozniak © 2025 All rights reserved.</p>
+  <p><img class="site-logo" src="./assets/images/step8up-academy-logo.jpg" alt="Step8up Academy Logo" title="Logo"> Kamil Wozniak © 2025 All rights reserved.</p>
 </footer>
+<!-- External JavaScript -->
+<script src="./assets/js/scripts.js"></script>
 </body>
 </html>
