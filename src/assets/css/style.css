@@ -16,10 +16,17 @@ section {
   padding-top: 200px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: #2c3e50;
-  font-size: 2.8em;
   margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 2.2em;
 }
 
 p {
