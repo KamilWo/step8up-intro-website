@@ -8,3 +8,7 @@ It's a simple personal website built using HTML and CSS, featuring:
 - A contact form to practice handling user input.
 
 This project focuses on solidifying my understanding of fundamental web technologies and responsive design principles.
+
+## Website public URL
+
+[Github Pages URL](https://kamilwo.github.io/step8up-intro-website)
