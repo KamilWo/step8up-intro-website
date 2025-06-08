@@ -299,6 +299,7 @@ div.contact-info ul li {
   min-height: 100px;
 }
 
+input,
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
@@ -313,6 +314,7 @@ div.contact-info ul li {
   transition: border-color 0.3s ease;
 }
 
+input:focus,
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: #007bff;
