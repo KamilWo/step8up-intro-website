@@ -1,5 +1,13 @@
 # Changelog
 
+### v0.3.2
+
+About me article fix.
+
+Validator links added.
+
+Updates to README.md file.
+
 ### v0.3.1
 
 Added autocompletes to the forms.
