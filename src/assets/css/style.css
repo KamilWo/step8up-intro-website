@@ -395,3 +395,10 @@ input:focus,
     margin: 0 auto 30px;
   }
 }
+
+/* Validators */
+.css-valid {
+  border: 0;
+  width: 88px;
+  height: 31px;
+}
