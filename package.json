@@ -1,15 +1,25 @@
 {
   "name": "step8up-intro-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This is my first web development project, created as part of the Step8Up bootcamp!",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "npm run validate && rimraf dist",
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html",
+    "validate": "npx stylelint src/assets/**/*.css && npx html-validate src/**/*.html"
   },
   "keywords": [
-    "simple website",
+    "Simple website",
     "HTML form"
   ],
   "author": "Kamil Wozniak",
-  "license": "GPLv3"
+  "license": "GPLv3",
+  "devDependencies": {
+    "html-validator": "^5.1.18",
+    "parcel": "^2.15.2",
+    "rimraf": "^6.0.1",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
 }
